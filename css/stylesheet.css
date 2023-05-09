@@ -1,0 +1,109 @@
+/*Establishes style of the page*/
+body {
+  background-color: pink;
+  color: white;
+  padding: 14px 16px;
+}
+/*Font change for headers*/
+h1 {
+  font-family: sans-serif;
+}
+h2 {
+  display: flex;
+  font-family: sans-serif;
+  align-self: center;
+}
+/*Font change for paragraphs*/
+p {
+  font-size:large;
+  font-family: serif;
+}
+/*Makes links look better on pink background*/
+a {
+  color: red;
+  background-color: white;
+  background-size: 150%;
+  border-radius: 50%;
+}
+a:hover {
+  color: blue;
+  background-size: 150%;
+  border-radius: 50%;
+}
+/*Location link*/
+.location {
+  font-size: larger;
+}
+/* specificity for guest list */
+.guests .attendants{
+  background-color: salmon;
+  float: left;
+  height: 320px;
+}
+/* specificity for form (unusable) */
+form {
+  float: right;
+}
+/* creates navbar*/
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  border: solid;
+}
+.topnav a {
+  float: left;
+  color: pink;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: lightpink;
+  color: white;
+}
+.topnav a.active {
+  background-color: red;
+  color: white;
+}
+
+.men {
+  display: flex;
+  float: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.women {
+  display: flex;
+  float: right;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.all-imgs {
+  width: 900;
+  height: 900;
+}
+
+.dress-imgs {
+  width: 100px;
+  height: 100px;
+  border-style: solid;
+  border-color:black
+}
+
+@media screen and (min-width: 480px) {
+  .topnav a {
+    float: left;
+    flex-direction: column;
+    color: pink;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+}
